@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator">
+    <header class="calc-header">
+      <h1>calc</h1>
+      <div class="theme-control">
+        <span>THEME</span>
+        <div class="theme-switcher">
+          <div class="theme-numbers">
+            <span data-theme-btn="1">1</span>
+            <span data-theme-btn="2">2</span>
+            <span data-theme-btn="3">3</span>
+          </div>
+          <div class="toggle-track" id="toggleTrack">
+            <div class="toggle-dot" id="toggleDot"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="screen" id="screen">0</div>
+
+    <div class="keypad">
+      <button data-key="7">7</button>
+      <button data-key="8">8</button>
+      <button data-key="9">9</button>
+      <button data-key="DEL" class="key-func">DEL</button>
+
+      <button data-key="4">4</button>
+      <button data-key="5">5</button>
+      <button data-key="6">6</button>
+      <button data-key="+">+</button>
+
+      <button data-key="1">1</button>
+      <button data-key="2">2</button>
+      <button data-key="3">3</button>
+      <button data-key="-">-</button>
+
+      <button data-key=".">.</button>
+      <button data-key="0">0</button>
+      <button data-key="/">/</button>
+      <button data-key="x">x</button>
+
+      <button data-key="RESET" class="key-func span-2">Clear</button>
+      <button data-key="=" class="key-equal span-2">=</button>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
